@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OmActivity">
+
+    <TextView
+        android:id="@+id/rubrik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VEM ÄR SAZ?"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/omsaz"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/secondary"
+        />
+
+    <TextView
+        android:id="@+id/omsaz"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Svante SAZ Anderzon startade sin bana som barnboksförfattare i mitten på 80-talet
+och han har givit ut flertalet böcker som översats till 20 olika språk. Han brinner för att
+skriva roliga och påhittiga historier som ska tilltala barn i åldrarna 0-10 år. Han är mycket populär
+som föreläsare och åker besöker gärna biblioteken i Scandinavien för att prata om sina böcker och möta sina fans. När
+han skapar sina böcker sitter gärna i sitt hem i Dalsland nära Mellerud."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/close_om_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gå tillbaka"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/omsaz"
+        android:backgroundTint="@color/secondary"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
