@@ -25,8 +25,8 @@
         android:text="Svante SAZ Anderzon startade sin bana som barnboksförfattare i mitten på 80-talet
 och han har givit ut flertalet böcker som översats till 20 olika språk. Han brinner för att
 skriva roliga och påhittiga historier som ska tilltala barn i åldrarna 0-10 år. Han är mycket populär
-som föreläsare och åker besöker gärna biblioteken i Scandinavien för att prata om sina böcker och möta sina fans. När
-han skapar sina böcker sitter gärna i sitt hem i Dalsland nära Mellerud."
+som föreläsare och besöker gärna biblioteken i Scandinavien för att prata om sina böcker och möta sina fans. När
+han skapar sina böcker sitter han i sitt hem i Dalsland nära Mellerud."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
