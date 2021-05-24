@@ -11,5 +11,8 @@ public class Books {
     private Integer size;
     private Integer cost;
 
+    @Override
+    public String toString() { return name; }
+
 
 }
