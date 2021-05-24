@@ -7,9 +7,11 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -38,6 +40,17 @@ public class BokActivity extends AppCompatActivity {
         adapter = new ArrayAdapter(this, R.layout.list_item_textview, arrayList);
         ListView listView = findViewById(R.id.bok_listview);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            Books temp_b = arrayList.get(position);
+            Log.d("BokActivity ==>", "Toast");
+            Toast.makeText(BokActivity.this, "Boken:  " + temp_b.getName() + "." + " Vart: "
+                    + temp_b.getLocation() + "." + " Utgivningsår: " + temp_b.getSize() + "."
+                    + " Pris: " + temp_b.getCost() + " kr.", Toast.LENGTH_SHORT).show();
+
+        });
+
+
 
         Button close = findViewById(R.id.close_bok_activity);
         close.setOnClickListener(new View.OnClickListener() {
