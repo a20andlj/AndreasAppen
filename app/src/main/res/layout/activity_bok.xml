@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".BokActivity">
 
+
+    <ListView
+        android:id="@+id/bok_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/close_bok_activity"
         android:layout_width="wrap_content"
