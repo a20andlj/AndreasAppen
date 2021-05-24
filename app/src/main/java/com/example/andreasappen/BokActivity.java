@@ -44,7 +44,7 @@ public class BokActivity extends AppCompatActivity {
         listView.setOnItemClickListener((parent, view, position, id) -> {
             Books temp_b = arrayList.get(position);
             Log.d("BokActivity ==>", "Toast");
-            Toast.makeText(BokActivity.this, "Boken:  " + temp_b.getName() + "." + " Vart: "
+            Toast.makeText(BokActivity.this, "Boken: " + temp_b.getName() + "." + " Vart: "
                     + temp_b.getLocation() + "." + " Utgivningsår: " + temp_b.getSize() + "."
                     + " Pris: " + temp_b.getCost() + " kr.", Toast.LENGTH_SHORT).show();
 
