@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".BokActivity">
 
-
+    <Button
+        android:id="@+id/close_bok_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gå tillbaka"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/secondary"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
